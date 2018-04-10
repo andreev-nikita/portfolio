@@ -1,0 +1,26 @@
+@font-face {
+	font-family: 'Neucha';
+	src: url('../fonts/Neucha/Neucha.woff2') format('woff2'),
+	     url('../fonts/Neucha/Neucha.woff') format('woff'),
+	     url('../fonts/Neucha/Neucha.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Comfortaa';
+	src: url('../fonts/Comfortaa/ComfortaaRegular/ComfortaaRegular.woff2') format('woff2'),
+	     url('../fonts/Comfortaa/ComfortaaRegular/ComfortaaRegular.woff') format('woff'),
+	     url('../fonts/Comfortaa/ComfortaaRegular/ComfortaaRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DancingScript';
+	src: url('../fonts/DancingScript/DancingScriptRegular/DancingScriptRegular.woff2') format('woff2'),
+	     url('../fonts/DancingScript/DancingScriptRegular/DancingScriptRegular.woff') format('woff'),
+	     url('../fonts/DancingScript/DancingScriptRegular/DancingScriptRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
