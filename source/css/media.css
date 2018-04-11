@@ -23,32 +23,23 @@
 		display: none;
 	}
 
-	.container_header-middle {
-		flex-direction: column;
-		justify-content: space-around;
+	.hamburger {
+		display: block;
+	}
+	
+	.header-middle__top {
+		justify-content: center;
 		text-align: center;
 	}
 
-	.header-middle__left-side {
-		height: auto;
-		width: 100%;
+	.header-middle__bottom {
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
 	}
 
-	.header-middle__left-side .circle {
-		display: none;
-	}
-	
-	.header-middle__right-side {
-		height: auto;
-		width: 100%;
-	}
-	
 	.header-middle__paragraph {
-		display: none;	
-	}
-
-	.header-middle__lang {
-		align-self: center;
+		display: none;
 	}
 
 	.header-bottom {
@@ -56,7 +47,7 @@
 	}
 
 	.header-middle {
-		height: calc(100% - 80px);
+		height: calc(100% - 90px);
 	}
 
 
