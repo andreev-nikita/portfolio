@@ -89,6 +89,7 @@ body {
 	color: #e7e7e7;
 	font-family: Neucha, sans-serif;
 	font-size: 16px;
+	margin-bottom: 80px;
 }
 
 
@@ -107,7 +108,7 @@ body {
 	right: 0;
 	box-sizing: border-box;
 	height: 90px;
-	background-color: rgba(32,37,40, 1);
+	background-color: rgba(17,18,25, 1);
 	border-bottom: 1px solid rgba(231,231,231, 0.3);
 	visibility: hidden;
 }
@@ -279,7 +280,7 @@ body {
 
 .little-text-block {
 	display: flex;	
-	justify-content: space-between;
+	justify-content: left;
 	align-items: center;
 	width: 50%;
 }
@@ -308,7 +309,7 @@ body {
 /*About Section*/
 
 .about {
-	padding: 160px 0 80px 0;
+	padding: 80px 0;
 }
 
 .about-information {
@@ -526,7 +527,7 @@ body {
 
 .contact-line__link {
 	font-size: 14px;
-
+	color: #fff;
 }
 
 .contacts-form {
@@ -580,12 +581,12 @@ body {
 	position: relative;
 	z-index: 110;
 	box-sizing: border-box;
-	border-top: 1px solid #e7e7e7;
-	height: 80px;
-	background-color: #202528;
+	border-top: 1px solid rgba(231,231,231, 0.3);
+	height: 50px;
+	background-color: rgba(17,18,25, 1);
 	color: #e7e7e7;
 	text-align: right;
-	line-height: 80px;
+	line-height: 50px;
 }
 
 
@@ -599,7 +600,7 @@ body {
 	height: 100%;
 	font-family: Neucha, sans-serif;
 	font-size: 16px;
-	background-color: rgba(32,37,40, 1);
+	background-color: rgba(17,18,25, 1);
 }
 
 .slide-menu {

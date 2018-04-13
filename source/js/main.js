@@ -39,4 +39,24 @@ $(document).ready( () => {
 	$(window).scroll(changeCssValues);
 
 
+//	 Smooth scrolling
+
+	let smoothScroll = (event, id) => {
+		$('.smooth-scroll').unbind();
+		event.preventDefault();
+		let top = $(id).offset().top;
+		$('html').animate({
+	        scrollTop: top
+	    }, 1000, () => {
+	    	$('.smooth-scroll').bind('click', function (event) { 
+				smoothScroll(event, $(this).attr('href'));
+			});
+	    });
+	}
+
+	$('.smooth-scroll').bind('click', function (event) { 
+		smoothScroll(event, $(this).attr('href'));
+	});
+
+
 })

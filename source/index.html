@@ -15,21 +15,22 @@
 </head>
 <body>
 	<div class="all-content">
-		<header class="header">
+		<header class="header" id="header">
 			<div class="navigation-menu" id="navigation-menu">
 				<div class="container container_header">
-					<a class="logo" id="logo" href="#">
+					<a class="logo smooth-scroll" id="logo" href="#header">
 						<span class="logo__name">Nikita</span>
 						<span class="logo__family">Andreev</span>
 					</a>
 					<nav class="main-menu">
-						<a href="#" class="main-menu__item">Обо мне</a>
-						<a href="#" class="main-menu__item">Технологии</a>
-						<a href="#" class="main-menu__item">Портфолио</a>
-						<a href="#" class="main-menu__item">Контакты</a>
+						<a href="#about" class="main-menu__item smooth-scroll">Обо мне</a>
+						<a href="#tech" class="main-menu__item smooth-scroll">Технологии</a>
+						<a href="#portfolio" class="main-menu__item smooth-scroll">Портфолио</a>
+						<a href="#contacts" class="main-menu__item smooth-scroll">Контакты</a>
 					</nav>
 					<div class="hamburger" id="hamburger">
-						<i class="fas fa-bars"></i>
+						<!-- <i class="fas fa-bars"></i> -->
+						<img src="img/hamburger.svg" alt="menu icon">
 					</div>
 				</div>
 			</div>
@@ -83,7 +84,7 @@
 			</div>
 		</header>
 
-		<section class="about">
+		<section class="about" id="about">
 			<div class="container">
 				<div class="about-information">
 					<div class="about-text">
@@ -122,7 +123,7 @@
 			</div>
 		</section>
 
-		<section class="tech">
+		<section class="tech" id="tech">
 			<div class="container">
 				<h2 class="main-header">
 					технологии
@@ -202,7 +203,7 @@
 			</div>		
 		</section>
 
-		<section class="portfolio">
+		<section class="portfolio" id="portfolio">
 			<div class="container">
 				<div class="main-header">
 					Портфолио
@@ -232,26 +233,26 @@
 			</div>
 		</section>
 
-		<section class="contacts">
+		<section class="contacts" id="contacts">
 			<div class="container">
 				<h2 class="main-header">Контакты</h2>
 				<div class="contacts-block">
 					<table class="contacts-block__left">
 						<tr class="contact-line">
 							<td class="contact-line__icon"><i class="fab fa-vk"></i></td>
-							<td class="contact-line__link">vk.com/id206982935</td>
+							<td><a class="contact-line__link" target="_blank" href="http://vk.com/id206982935">vk.com/id206982935</a></td>
 						</tr>
 						<tr class="contact-line">
 							<td class="contact-line__icon"><i class="fab fa-github"></i></td>
-							<td class="contact-line__link">github.com/andreev-nikita</td>
+							<td><a class="contact-line__link" target="_blank" href="http://github.com/andreev-nikita">github.com/andreev-nikita</a></td>
 						</tr>
 						<tr class="contact-line">
 							<td class="contact-line__icon"><i class="fas fa-code"></i></td>
-							<td class="contact-line__link">codeacademy.com/nikitaandreev</td>
+							<td><a class="contact-line__link" target="_blank" href="http://codeacademy.com/nikitaandreev">codeacademy.com/nikitaandreev</a></td>
 						</tr>
 						<tr class="contact-line">
 							<td class="contact-line__icon"><i class="fas fa-envelope"></i></td>
-							<td class="contact-line__link">andreev-nikita@list.ru</td>
+							<td>andreev-nikita@list.ru</td>
 						</tr>
 						<tr class="contact-line">
 							<td class="contact-line__icon"><i class="fas fa-phone"></i></td>
@@ -272,7 +273,7 @@
 			</div>
 		</section>
 
-		<footer class="footer">
+		<footer class="footer" id="footer">
 			<div class="container">
 				Андреев Никита &copy; 2018 
 			</div>
@@ -280,10 +281,10 @@
 	</div>
 	<div class="slide-menu-container" id="slide-menu-container">
 		<nav class="slide-menu">
-			<a href="#" class="slide-menu__item">Обо мне</a>
-			<a href="#" class="slide-menu__item">Технологии</a>
-			<a href="#" class="slide-menu__item">Портфолио</a>
-			<a href="#" class="slide-menu__item">Контакты</a>
+			<a href="#about" class="slide-menu__item smooth-scroll">Обо мне</a>
+			<a href="#tech" class="slide-menu__item smooth-scroll">Технологии</a>
+			<a href="#portfolio" class="slide-menu__item smooth-scroll">Портфолио</a>
+			<a href="#contacts" class="slide-menu__item smooth-scroll">Контакты</a>
 		</nav>
 	</div>
 	<script type="text/javascript" src="lib/jquery/jquery-3.3.1.min.js"></script>
