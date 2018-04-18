@@ -319,22 +319,21 @@ body {
 }
 
 .about-text {
-	width: 56%;
+	padding-right: 70px;
 }
 
 .about-img {
 	text-align: right;
-	width: 36%;
+	min-width: 400px;
 }
 
 .about-img__photo {
 	width: 100%;
-	max-width: 500px;
 }
 
 .about-cv {
-	height: 230px;
-	margin-top: 150px;
+	height: 200px;
+	margin-top: 90px;
 	padding-right: 20px;
 	border-radius: 20px;
 	background-color: #e84c3d;
@@ -387,7 +386,7 @@ body {
 
 .skill {
 	width: 33%;
-	min-height: 400px;
+	min-height: 350px;
 }
 
 .skill_dark {
@@ -414,7 +413,7 @@ body {
 .skill__img	{
 	margin: 0 auto;
 	margin-top: 40px;
-	width: 100px;
+	width: 90px;
 }
 
 .skill__img img {
@@ -426,7 +425,7 @@ body {
 	line-height: 24px;
 	margin-top: 40px;
 	padding: 0 20%;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 }
 
 /*Portfolio Section*/
@@ -592,13 +591,17 @@ body {
 }
 
 .contacts-form__input {
+	font-family: Comfortaa, sans-serif;
+	font-size: 12px;
 	box-sizing: border-box;
-	border: none;
 	width: 90%;
 	border-radius: 17px;
 	display: block;
 	margin: 20px auto;
 	padding-left: 20px;
+	border: 1px solid #fff;
+	background-color: #fff;
+	transition: all 0.6s ease;
 }
 
 .contacts-form__input:focus {
@@ -615,13 +618,24 @@ body {
 	padding: 20px;
 }
 
+.contacts-form__wrong {
+	border: 1px solid #fff;
+	background-color: #ef9a9a;
+	transition: all 0.6s ease;
+}
+
 .contacts-form__button {
 	text-align: center;
 	margin-top: 30px;
 }
 
+.contacts-form__submit {
+	display: none;
+}
+
 .ellipse-button_dark {
 	background-color: #202528;
+	cursor: pointer;
 }
 
 /*Footer Section*/
@@ -630,7 +644,6 @@ body {
 	position: relative;
 	z-index: 110;
 	box-sizing: border-box;
-	border-top: 1px solid rgba(231,231,231, 0.3);
 	height: 50px;
 	background-color: rgba(17,18,25, 1);
 	color: #e7e7e7;

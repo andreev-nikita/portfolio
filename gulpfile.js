@@ -41,9 +41,10 @@ gulp.task('clean', () => {
 
 gulp.task('run', ['copy'], () => {
 	browserSync.init({
-	    server: {
-	        baseDir: './build'
-	    }
+	    // server: {
+	    //     baseDir: './build'
+	    // }
+	    proxy: "portfolio.pen"
     });
     gulp.watch(path.watch.all, ['copy-watch']);
 })

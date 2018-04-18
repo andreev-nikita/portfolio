@@ -59,4 +59,50 @@ $(document).ready( () => {
 	});
 
 
+
+// Ajax sending mail
+	$('#contacts-form__button').click( () => {	
+		let mailCheck = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/,
+			nameCheck = /.+/,
+			messageCheck = /.+/;
+ 
+		if(nameCheck.test($('#contacts-form__name').val()) == false) {
+			$('#contacts-form__name').addClass('contacts-form__wrong');
+			setTimeout( () => {
+				$('#contacts-form__name').removeClass('contacts-form__wrong');
+			}, 1200);
+		} else {
+			if(mailCheck.test($('#contacts-form__mail').val()) == false) {
+				$('#contacts-form__mail').addClass('contacts-form__wrong');
+				setTimeout( () => {
+					$('#contacts-form__mail').removeClass('contacts-form__wrong');
+				}, 1200);
+			} else {
+				if(messageCheck.test($('#contacts-form__text').val()) == false) {
+					$('#contacts-form__text').addClass('contacts-form__wrong');
+					setTimeout( () => {
+						$('#contacts-form__text').removeClass('contacts-form__wrong');
+					}, 1200);
+				} else {
+					$('#contacts-form').submit();
+				}
+			}
+		}
+	})
+	
+	$('#contacts-form').submit( function(event) { 
+    	event.preventDefault();
+        $.ajax({
+	        type: "POST", 
+	        url: "../send.php", 
+	        data: $(this).serialize(),
+	        success: function() {
+               alert("Ваше сообщение отпрвлено!");
+               $('#contacts-form__mail').val('');
+               $('#contacts-form__name').val('');
+               $('#contacts-form__text').val('');
+	        }
+    	});
+    });
+
 })
