@@ -97,7 +97,7 @@ $(document).ready( () => {
 	        url: "../send.php", 
 	        data: $(this).serialize(),
 	        success: function() {
-               alert("Ваше сообщение отпрвлено!");
+               alert("Ваше сообщение отправлено!");
                $('#contacts-form__mail').val('');
                $('#contacts-form__name').val('');
                $('#contacts-form__text').val('');
