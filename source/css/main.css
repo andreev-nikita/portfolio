@@ -67,6 +67,7 @@ body {
 
 .ellipse-button {
 	display: inline-block;
+	margin-top: 10px;
 	height: 35px;
 	padding: 0 25px;
 	font-size: 14px;
@@ -325,6 +326,7 @@ body {
 .about-img {
 	text-align: right;
 	min-width: 400px;
+	width: 400px;
 }
 
 .about-img__photo {
@@ -471,7 +473,8 @@ body {
 .work__content {
 	display: flex;
 	justify-content: space-between;
-	padding-right: 20px;
+	padding: 0 10px;
+	align-items: center;
 }
 
 .work__text	{
@@ -490,6 +493,7 @@ body {
 
 .work__img-container {
 	min-width: 360px;
+	width: 360px;
 	padding-left: 5px;
 }
 
@@ -504,6 +508,7 @@ body {
 }
 
 .slider-selectors__item {
+	cursor: pointer;
 	margin: 0 5px;
 	display: inline-block;
 	background-color: #ddd;
@@ -522,7 +527,7 @@ body {
 
 .divslider {
 	overflow: hidden;
-	margin: 0 70px;
+	margin: 0 50px;
 	width: 100%;
 }
 
@@ -543,6 +548,10 @@ body {
 
 .contacts {
 	padding: 80px 0;
+}
+
+.contacts-block__mobile {
+	display: none;
 }
 
 .contacts-block {
@@ -680,5 +689,3 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
-
-

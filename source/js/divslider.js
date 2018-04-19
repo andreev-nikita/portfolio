@@ -36,6 +36,17 @@ $(document).ready( () => {
 		}
 	}
 
+	let slideToTheItem = (nextItem) => {
+		// console.log(`next: ${nextItem}   current: ${currentItem}`);
+		if((nextItem >= 1) && (nextItem <= itemsCount) && (nextItem != currentItem)) {
+			let currentTransform = -((nextItem - 1) * width);
+			$('.divslider__viewport').css('transform', `translateX(${currentTransform}px)`);
+			$(`.slider-selectors__item:nth-child(${currentItem})`).removeClass('slider-selectors__item_active');
+			currentItem = nextItem;
+			$(`.slider-selectors__item:nth-child(${currentItem})`).addClass('slider-selectors__item_active');
+		}
+	}
+
 	setViewportWidth();
 	$(window).resize(setViewportWidth);
 
@@ -45,5 +56,10 @@ $(document).ready( () => {
 
 	$('#prev-slide').click( () => {
 		slideToThePrev();
+	})
+
+	$('.slider-selectors__item').click( function () {
+		let nextItem = $('.slider-selectors__item').index(this) + 1;
+		slideToTheItem(nextItem);
 	})
 })

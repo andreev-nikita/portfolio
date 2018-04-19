@@ -12,6 +12,15 @@ $(document).ready( () => {
 	}
 	$('#hamburger').bind('click', showSideMenu);
 
+	let hideSideMenu = () => {
+		$('body').toggleClass('stop-scroll')
+		$('#slide-menu-container').animate({
+			width: 'toggle'	
+		}, 350);
+		$('.slide-menu__item').unbind();
+	}
+
+	$('.slide-menu__item').bind('click', hideSideMenu);
 
 //   Changing size and opacity of the top menu
 
@@ -51,6 +60,7 @@ $(document).ready( () => {
 	    	$('.smooth-scroll').bind('click', function (event) { 
 				smoothScroll(event, $(this).attr('href'));
 			});
+			$('.slide-menu__item').bind('click', hideSideMenu);
 	    });
 	}
 
