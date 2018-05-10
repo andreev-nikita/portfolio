@@ -62,6 +62,9 @@ $(document).ready( () => {
 			});
 			$('.slide-menu__item').bind('click', hideSideMenu);
 	    });
+	    $('body').animate({
+	        scrollTop: top
+	    }, 1000);
 	}
 
 	$('.smooth-scroll').bind('click', function (event) { 
