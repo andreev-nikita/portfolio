@@ -17,7 +17,8 @@ let path = {
 		fonts: 'build/fonts/',
 		fav: 'build/favicons/',
 		lib: 'build/lib',
-		php: 'build/'
+		php: 'build/',
+		other: 'build/'
 	},
 	source: {
 		html: 'source/*.html',
@@ -27,7 +28,8 @@ let path = {
 		fonts: 'source/fonts/**/*.*',
 		fav: ['source/favicons/**/*.*'],
 		lib: 'source/lib/**/*.*',
-		php: 'source/*.php'
+		php: 'source/*.php',
+		other: 'source/*.pdf'
 	},
 	watch: {
 		html: 'source/*.html',
@@ -102,7 +104,9 @@ gulp.task('copy', () => {
 	gulp.src(path.source.lib)
 			.pipe(gulp.dest(path.build.lib));
 	gulp.src(path.source.php)
-			.pipe(gulp.dest(path.build.php));				
+			.pipe(gulp.dest(path.build.php));
+	gulp.src(path.source.other)
+			.pipe(gulp.dest(path.build.other));					
 	return true;
 })
 
